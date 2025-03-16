@@ -1,0 +1,47 @@
+/*** Add Fonts ***/
+
+@font-face {
+  font-family: roboto;
+  src: url("./fonts/Roboto-Regular.ttf");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: roboto-medium;
+  src: url("./fonts/Roboto-Medium.ttf");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: roboto-bold;
+  src: url("./fonts/Roboto-Bold.ttf");
+  font-weight: 700;
+}
+
+/*** CSS Reset ***/
+
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+button {
+  font: inherit;
+}
+
+/*** Custom Properties ***/
+
+:root {
+  --primary: hsl(201, 79%, 46%);
+  --secondary: hsl(42, 87%, 55%);
+  --primary-text: hsl(0, 0%, 0%);
+  --secondary-text: hsl(0, 0%, 39%);
+  --light-text: hsl(0, 0%, 100%);
+  --primary-icon: hsl(0, 0%, 20%);
+  --background-primary: hsl(214, 32%, 91%);
+  --background-secondary: hsl(0, 0%, 100%);
+  --roboto-regular: roboto, sans-serif;
+  --roboto-medium: roboto-medium, sans-serif;
+  --roboto-bold: roboto-bold, sans-serif;
+}
