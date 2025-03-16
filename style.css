@@ -196,6 +196,11 @@ body {
   padding-left: 1em;
 }
 
+.sidebar__brand--margin,
+.sidebar__list--margin {
+  margin-bottom: 3rem;
+}
+
 .sidebar__logo {
   width: 40px;
   height: 40px;
@@ -242,11 +247,12 @@ body {
 .main {
   display: grid;
   grid-template-columns: 2fr 1fr;
+  gap: 2em;
   padding: 2em 1.5em;
   background-color: var(--background-primary);
 }
 
-.project__title {
+.main__title {
   margin-bottom: 0.5em;
 }
 
@@ -266,8 +272,12 @@ body {
   background-color: var(--background-secondary);
 }
 
+.card__title {
+  margin-bottom: 0.25em;
+}
+
 .card__text {
-  margin: 0.5em 0 3em;
+  margin-bottom: 3em;
   color: var(--secondary-text);
 }
 
@@ -281,4 +291,28 @@ body {
   width: 25px;
   height: 25px;
   fill: var(--primary-icon);
+}
+
+/*** Announcement Section ***/
+
+.announcement__wrapper {
+  padding: 0.5em 2em;
+  border-radius: 10px;
+  background-color: var(--background-secondary);
+}
+
+.announcement__content {
+  padding: 1.5em 0;
+}
+
+.announcement__content:not(.announcement__content:last-child) {
+  border-bottom: 1px solid var(--secondary-text);
+}
+
+.announcement__title {
+  margin-bottom: 0.25em;
+}
+
+.announcement__text {
+  color: var(--secondary-text);
 }
